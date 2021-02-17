@@ -1,0 +1,423 @@
+<div class="container-width-only column-clearfix">                         <div class="page__head">
+                                                                            <div id="banner2019" class="remote-portlet ge2019-banner-container" data-sequence-id="2620" data-comp-meta="{&quot;id&quot;:&quot;banner2019&quot;,&quot;type&quot;:&quot;remote-portlet&quot;,&quot;handler&quot;:&quot;remotePortlet&quot;,&quot;deviceGroups&quot;:null,&quot;opts&quot;:{&quot;title&quot;:&quot;Election+2019&quot;,&quot;template&quot;:&quot;default&quot;,&quot;variant&quot;:&quot;K02000001&quot;,&quot;assetId&quot;:null,&quot;id&quot;:&quot;election2019_data\/banner2019&quot;,&quot;morph&quot;:&quot;bodyInline&quot;,&quot;class&quot;:&quot;ge2019-banner-container&quot;}}">
+    <div class="gel-wrap gs-u-box-size">
+    <div class="ge2019-banner-branding">
+        <svg class="ge2019-branding__logo" viewBox="0 0 52 60" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+            <image xlink="http://www.w3.org/1999/xlink" href="//static.files.bbci.co.uk/news-archive/news.files.bbci.co.uk/include/elections/ge2019/branding/election2019-2x.svg" src="//static.files.bbci.co.uk/news-archive/news.files.bbci.co.uk/include/elections/ge2019/branding/election2019-2x.png" width="100%" height="100%"></image>
+        </svg>
+        <h2 class="ge2019-banner__headline">UK results: Conservatives win majority</h2>
+        <div class="ge2019-banner__headline--summary">After 650 of 650 seats declared</div>
+    </div>
+</div>
+
+<div class="gel-wrap gs-u-box-size">
+    <div class="ge2019-banner no-touch">
+        <div class="ge2019-banner__inner">
+            <div class="ge2019-banner__results">
+                <div class="ge2019-banner__lines" aria-hidden="true">
+                    <div class="ge2019-banner__line"></div>
+                    <div class="ge2019-banner__line"></div>
+                    <div class="ge2019-banner__line"></div>
+                    <div class="ge2019-banner__line"></div>
+                    <div class="ge2019-banner__line"></div>
+                    <div class="ge2019-banner__line"></div>
+                </div>
+                <div class="ge2019-banner-histogram" aria-hidden="true">
+                    <div class="ge2019-banner__majority" style="bottom:75%;"></div>
+                    <div class="ge2019-banner__majority-label" style="bottom:75%;">326 seats needed to win</div>
+                    <div class="ge2019-banner-histogram__bar">
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--con ge2019-banner-histogram__innerbar--core"></div>
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--con ge2019-banner-histogram__innerbar--enhanced  ge2019-banner-histogram__innerbar--animate " style="height:84%; min-height:1px;"></div>
+                    </div>
+                    <div class="ge2019-banner-histogram__bar">
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--lab ge2019-banner-histogram__innerbar--core"></div>
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--lab ge2019-banner-histogram__innerbar--enhanced  ge2019-banner-histogram__innerbar--animate " style="height:47%; min-height:1px;"></div>
+                    </div>
+                    <div class="ge2019-banner-histogram__bar">
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--snp ge2019-banner-histogram__innerbar--core"></div>
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--snp ge2019-banner-histogram__innerbar--enhanced  ge2019-banner-histogram__innerbar--animate " style="height:11%; min-height:1px;"></div>
+                    </div>
+                    <div class="ge2019-banner-histogram__bar">
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--ld ge2019-banner-histogram__innerbar--core"></div>
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--ld ge2019-banner-histogram__innerbar--enhanced  ge2019-banner-histogram__innerbar--animate " style="height:3%; min-height:1px;"></div>
+                    </div>
+                    <div class="ge2019-banner-histogram__bar">
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--dup ge2019-banner-histogram__innerbar--core"></div>
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--dup ge2019-banner-histogram__innerbar--enhanced  ge2019-banner-histogram__innerbar--animate " style="height:2%; min-height:1px;"></div>
+                    </div>
+                    <div class="ge2019-banner-histogram__bar">
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--oth ge2019-banner-histogram__innerbar--core"></div>
+                        <div class="ge2019-banner-histogram__innerbar ge2019-banner-party--oth ge2019-banner-histogram__innerbar--enhanced  ge2019-banner-histogram__innerbar--animate " style="height:3%; min-height:1px;"></div>
+                    </div>
+                </div>
+                <table class="ge2019-banner__table">
+                    <caption><span class="vh">UK results</span></caption>
+                    <thead class="ge2019-banner__head">
+                        <tr>
+                            <th scope="row" class="ge2019-banner__header"><span class="vh">Party</span></th>
+                            <th scope="col" class="ge2019-banner__header">
+                                <abbr class="ge2019-banner__abbr" aria-hidden="true">CON</abbr>
+                                <span class="vh">Conservative</span>
+                            </th>
+                            <th scope="col" class="ge2019-banner__header">
+                                <abbr class="ge2019-banner__abbr" aria-hidden="true">LAB</abbr>
+                                <span class="vh">Labour</span>
+                            </th>
+                            <th scope="col" class="ge2019-banner__header">
+                                <abbr class="ge2019-banner__abbr" aria-hidden="true">SNP</abbr>
+                                <span class="vh">Scottish National Party</span>
+                            </th>
+                            <th scope="col" class="ge2019-banner__header">
+                                <abbr class="ge2019-banner__abbr" aria-hidden="true">LD</abbr>
+                                <span class="vh">Liberal Democrat</span>
+                            </th>
+                            <th scope="col" class="ge2019-banner__header">
+                                <abbr class="ge2019-banner__abbr" aria-hidden="true">DUP</abbr>
+                                <span class="vh">Democratic Unionist Party</span>
+                            </th>
+                            <th scope="col" class="ge2019-banner__header">
+                                <abbr class="ge2019-banner__abbr" aria-hidden="true">OTH</abbr>
+                                <span class="vh">Others</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="ge2019-banner__body">
+                        <tr class="ge2019-banner__row ge2019-banner__row--seats">
+                            <th scope="row"><span class="vh">Seats</span></th>
+                            <td class="ge2019-banner__value"><span>365</span></td>
+                            <td class="ge2019-banner__value"><span>203</span></td>
+                            <td class="ge2019-banner__value"><span>48</span></td>
+                            <td class="ge2019-banner__value"><span>11</span></td>
+                            <td class="ge2019-banner__value"><span>8</span></td>
+                            <td class="ge2019-banner__value"><span>15</span></td>
+                        </tr>
+                        <tr class="ge2019-banner__row ge2019-banner__row--change">
+                            <th scope="row"><span class="vh">Change</span></th>
+                            <td class="ge2019-banner__value ge2019-banner__value--pos"><span>+47</span></td>
+                            <td class="ge2019-banner__value ge2019-banner__value--neg"><span>-59</span></td>
+                            <td class="ge2019-banner__value ge2019-banner__value--pos"><span>+13</span></td>
+                            <td class="ge2019-banner__value ge2019-banner__value--neg"><span>-1</span></td>
+                            <td class="ge2019-banner__value ge2019-banner__value--neg"><span>-2</span></td>
+                            <td class="ge2019-banner__value ge2019-banner__value--pos"><span>+2</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="ge2019-banner__key" style="top:30.5px;">
+            </div>
+
+            <p class="ge2019-banner-summary" aria-hidden="true">
+                <span class="ge2019-banner-summary__value-label ge2019-banner-summary__value-label--seats">Seats</span>
+                <span class="ge2019-banner-summary__value-label ge2019-banner-summary__value-label--change">Change</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+</div>                                                                                            <div id="ticker2019" class="remote-portlet " data-sequence-id="2620" data-comp-meta="{&quot;id&quot;:&quot;ticker2019&quot;,&quot;type&quot;:&quot;remote-portlet&quot;,&quot;handler&quot;:&quot;remotePortlet&quot;,&quot;deviceGroups&quot;:null,&quot;opts&quot;:{&quot;title&quot;:&quot;Election+2019&quot;,&quot;template&quot;:&quot;default&quot;,&quot;variant&quot;:&quot;K02000001&quot;,&quot;assetId&quot;:null,&quot;id&quot;:&quot;election2019_data\/ticker2019&quot;,&quot;morph&quot;:&quot;bodyInline&quot;}}">
+    <div class="gel-wrap gs-u-box-size">
+    <div class="ge2019-ticker no-touch">
+        <h3 class="vh">Latest election headlines</h3>
+        <ol id="ge2019-ticker__list" class="ge2019-ticker__list" role="list">
+            <li class="ge2019-ticker__item ge2019-ticker__item--0" role="listitem">
+                <div class="ge2019-ticker__label">
+                    <span class="ge2019-ticker__label-text">LATEST</span>
+                </div>
+
+                <div class="ge2019-ticker__content">
+                    <div class="ge2019-ticker__content-inner">
+                        <span><a href="https://www.bbc.co.uk/news/election-2019-50787480">Animated tour of the election in 10 stops</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="ge2019-ticker__item ge2019-ticker__item--1" role="listitem">
+                <div class="ge2019-ticker__label">
+                    <span class="ge2019-ticker__label-text">LATEST</span>
+                </div>
+
+                <div class="ge2019-ticker__content">
+                    <div class="ge2019-ticker__content-inner">
+                        <span><a href="https://www.bbc.co.uk/news/av/election-2019-50790571/general-election-2019-moments-from-results-day">VIDEO: Key moments from results day</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="ge2019-ticker__item ge2019-ticker__item--2" role="listitem">
+                <div class="ge2019-ticker__label">
+                    <span class="ge2019-ticker__label-text">LATEST</span>
+                </div>
+
+                <div class="ge2019-ticker__content">
+                    <div class="ge2019-ticker__content-inner">
+                        <span><a href="https://www.bbc.co.uk/news/election-2019-50770798">Results analysis in maps and charts</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="ge2019-ticker__item ge2019-ticker__item--3" role="listitem">
+                <div class="ge2019-ticker__label">
+                    <span class="ge2019-ticker__label-text">LATEST</span>
+                </div>
+
+                <div class="ge2019-ticker__content">
+                    <div class="ge2019-ticker__content-inner">
+                        <span><a href="https://www.bbc.co.uk/news/election-2019-50748393">Five big things on Boris Johnson's to-do list</a></span>
+                    </div>
+                </div>
+            </li>
+        </ol>
+
+        <div class="ge2019-ticker-controls ge2019-ticker-controls--enabled">
+            <button id="ge2019-ticker-controls__button" class="ge2019-ticker-controls__button ge2019-ticker-controls__button--pause" aria-hidden="true" tabindex="-1">
+                <span class="ge2019-ticker-controls__button-label">Pause ticker</span>
+                <div class="ge2019-ticker-controls__button-inner">
+                    <svg class="svg-icon ge2019-ticker-controls__icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path class="ge2019-ticker-controls__path-pause" fill="currentColor" d="M3 0h9v32H3zm17 0h9v32h-9z"></path><path class="ge2019-ticker-controls__path-play" fill="currentColor" d="M3 32l26-16L3 0z"></path></svg>
+                </div>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<style>
+.ge2019-ticker__item {
+    animation-duration: 28s;
+    -webkit-animation-duration: 28s;
+}
+
+@keyframes anim-item0 {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+    2% {
+        opacity: 1;
+        z-index: 1;
+    }
+    23% {
+        opacity: 1;
+        z-index: 1;
+    }
+    25% {
+        opacity: 0;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@-webkit-keyframes anim-item0 {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+    2% {
+        opacity: 1;
+        z-index: 1;
+    }
+    23% {
+        opacity: 1;
+        z-index: 1;
+    }
+    25% {
+        opacity: 0;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+@keyframes anim-item1 {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+    25% {
+        opacity: 0;
+        z-index: 0;
+    }
+    27% {
+        opacity: 1;
+        z-index: 1;
+    }
+    48% {
+        opacity: 1;
+        z-index: 1;
+    }
+    50% {
+        opacity: 0;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@-webkit-keyframes anim-item1 {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+    25% {
+        opacity: 0;
+        z-index: 0;
+    }
+    27% {
+        opacity: 1;
+        z-index: 1;
+    }
+    48% {
+        opacity: 1;
+        z-index: 1;
+    }
+    50% {
+        opacity: 0;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+@keyframes anim-item2 {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+    50% {
+        opacity: 0;
+        z-index: 0;
+    }
+    52% {
+        opacity: 1;
+        z-index: 1;
+    }
+    73% {
+        opacity: 1;
+        z-index: 1;
+    }
+    75% {
+        opacity: 0;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@-webkit-keyframes anim-item2 {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+    50% {
+        opacity: 0;
+        z-index: 0;
+    }
+    52% {
+        opacity: 1;
+        z-index: 1;
+    }
+    73% {
+        opacity: 1;
+        z-index: 1;
+    }
+    75% {
+        opacity: 0;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+@keyframes anim-item3 {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+    75% {
+        opacity: 0;
+        z-index: 0;
+    }
+    77% {
+        opacity: 1;
+        z-index: 1;
+    }
+    98% {
+        opacity: 1;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@-webkit-keyframes anim-item3 {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+    75% {
+        opacity: 0;
+        z-index: 0;
+    }
+    77% {
+        opacity: 1;
+        z-index: 1;
+    }
+    98% {
+        opacity: 1;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+</style>
+
+</div>                                                                                            <div id="links2019" class="remote-portlet ge2019-banner-links--results-page" data-sequence-id="2620" data-comp-meta="{&quot;id&quot;:&quot;links2019&quot;,&quot;type&quot;:&quot;remote-portlet&quot;,&quot;handler&quot;:&quot;remotePortlet&quot;,&quot;deviceGroups&quot;:null,&quot;opts&quot;:{&quot;title&quot;:&quot;Election+2019&quot;,&quot;template&quot;:&quot;default&quot;,&quot;variant&quot;:&quot;K02000001&quot;,&quot;assetId&quot;:null,&quot;id&quot;:&quot;election2019_data\/links2019&quot;,&quot;class&quot;:&quot;ge2019-banner-links--results-page&quot;,&quot;morph&quot;:&quot;bodyInline&quot;}}">
+    <div class="gel-wrap gs-u-box-size">
+    <div class="ge2019-banner-links no-touch">
+        <a href="https://www.bbc.co.uk/news/live/election-2019-50801095" class="ge2019-banner-link ge2019-banner-link--live">
+            <span class="ge2019-banner-link__live">
+                <i class="ge2019-banner-link__live-icon" aria-hidden="true"></i>
+                <span class="ge2019-banner-link__live-text">Live</span>
+            </span>
+            <span class="ge2019-banner-link__text">reporting</span>
+        </a>
+
+        <a href="/news/election/2019/results" class="ge2019-banner-link ge2019-banner-link--results">
+            <span class="ge2019-banner-link__text">Results in full</span>
+            
+            <span class="ge2019-banner-link__results-icon">
+                <svg viewBox="0 0 32 32" focusable="false" aria-hidden="true">
+                    <polygon points="29,16 3,0 3,7.2 17.6,16 3,24.8 3,32"></polygon>
+                </svg>
+            </span>
+        </a>
+        
+        <a href="/news/election-2019-50241331" class="ge2019-banner-link ge2019-banner-link--about">
+            <span class="ge2019-banner-link__text">About these results</span>
+        </a>
+    </div>
+</div>
+</div>                                                                                            <div class="ge2017-title ge2017-title--results">
+    <h1 class="politics-header__title">Results</h1>
+</div>
+                                                                                            <div class="mininav-wrapper mininav--election2015 mininav--results">
+    <ul class="mininav">
+            <li class="mininav__item active"><a href="/news/election/2019/results">UK</a></li>
+            <li class="mininav__item "><a href="/news/election/2019/results/england">Eng</a></li>
+            <li class="mininav__item "><a href="/news/election/2019/results/northern_ireland">NI</a></li>
+            <li class="mininav__item "><a href="/news/election/2019/results/scotland">Scot</a></li>
+            <li class="mininav__item "><a href="/news/election/2019/results/wales">Wales</a></li>
+    </ul>
+</div>                                                                        </div>
+             </div>

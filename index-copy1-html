@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UK Election Results</title>
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <h1>UK Election Results 2019</h1>
+  <section class="bar-graph-vertical">
+    <div class="bar-container">
+      <div class="bar bar-con">65%</div>
+    </div>
+    <div class="bar-container">
+      <div class="bar bar-lab">40%</div>
+    </div>
+    <div class="bar-container">
+      <div class="bar bar-snp">40%</div>
+    </div>
+    <table class="results-table">
+      <thead class="table-header">
+        <tr>
+          <th scope="col" class="cell">
+            <abbr>CON</abbr>
+          </th>
+          <th scope="col" class="cell">
+            <abbr>LAB</abbr>
+          </th>
+          <th scope="col" class="cell">
+            <abbr>LD</abbr>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </section>
+</body>
+</html>
