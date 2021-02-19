@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  // define colours for main parties
+  colours = {
+    CON : "#0575c9",
+    LAB : "#e91d0e",
+    LD : "#f8ed2e",
+    OTH : "#aaaaaa"
+  }
   // Party class definition
   class Party {
     constructor(partyCode,partyColour) {
@@ -44,53 +51,56 @@ $(document).ready(function() {
     reader.onload = function(loadedEvent) {
       // New file has been loaded
       // Call function to update data and page
-      createParties(loadedEvent.target.result);
-      update(loadedEvent.target.result);
+      var constituencyResultXML = loadedEvent.target.result
+      parties = createParties(constituencyResultXML);
+      update(constituencyResultXML, parties);
     }
     reader.readAsText(file);
   }
 
   function createParties(firstResult) {
     // Takes the first constituency result and returns
-    // an array of party objects with correct partyCodes
+    // an object of party objects with correct partyCodes
     // and colours
-    parties = []
-    colours = {
-      CON : "#0575c9",
-      LAB : "#e91d0e",
-      LD : "#f8ed2e",
-      other : "#aaaaaa"
-    }
-    parties = []
+    var parties = {};
     $(firstResult).find("partyCode").each(function() {
       partyCode = $(this).text().trim();
       if (partyCode in colours) {
         var colour = colours[partyCode];
       } else {
-        var colour = colours['other'];
+        var colour = colours['OTH'];
       }
-      parties.push(new Party($(this).text(),colour));
+      parties[partyCode] = new Party(partyCode,colour));
     })
     return parties;
   }
 
 })
 
-function update(response) {
-  $(response).find("result").each(function () {
-    parties.forEach(function (party, index) {
-      party.partyCode = $(this).find("partycode").text();
-      party.add_votes($(this).find("votes").text());
-    })
-    // Create head and body of seats table
-    var $tableHeadRow = $('<thead><tr></tr></thead>');
-    var $tableBodyRow = $('<tbody><tr></tr></tbody');
-    parties.forEach(function(party,index) {
-      $tableHeadRow.append($('<th scope="col"></th>').text(party.partyCode));
-      $tableBodyRow.append($('<td></td>').text(party.seats));
-    })
-    // append seats data to table
-    $('.seats-table').append($tableHeadRow)
-    $('.seats-table').append($tableBodyRow)
+function update(response, parties) {
+  // map object to store results for one seat
+  // map objects have ordered elements so winning
+  // seat can be easily retrieved as first in list
+  var results = new Map;
+  $(response).find("result").each(function(index, value) {
+    var partyCode = $(this).find("partyCode").text().trim();
+    var votes = parseInt($(this).find("votes").text());
+    parties[partyCode].add_votes(votes);
+    // winner is first result
+    if (index==0) {parties[partyCode].seat_won};
+  })
+  // Update party objects
+  parties.forEach(function (party, index) {
+    party.
+  // Create head and body of seats table
+  var $tableHeadRow = $('<thead><tr></tr></thead>');
+  var $tableBodyRow = $('<tbody><tr></tr></tbody');
+  parties.forEach(function(party,index) {
+    $tableHeadRow.append($('<th scope="col"></th>').text(party.partyCode));
+    $tableBodyRow.append($('<td></td>').text(party.seats));
+  })
+  // append seats data to table
+  $('.seats-table').append($tableHeadRow)
+  $('.seats-table').append($tableBodyRow)
   })
 }
