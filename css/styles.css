@@ -10,16 +10,15 @@ body {
     position: normal;
 }
 
-.bar-graph-vertical {
+.histogram {
     width: 680px;
-    height: 150px;
+    height: 325px;
     display: table;
     background-color:white;
 }
 
 .bar-container {
     display: table-cell;
-    height: 150px;
     width: 16%;
     float: left;
     position: relative;
@@ -49,7 +48,7 @@ body {
   height: 20%;
 }
 
-table {
+.seats-table {
   width: 100%;
   box-sizing:border-box;
   border-spacing: 0;
@@ -63,9 +62,8 @@ thead {
 }
 
  .cell {
-  width: 16%;
-  float: left;
-  text-align: left;
+  float: center;
+  text-align: center;
 }
 
  .vh {
