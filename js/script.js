@@ -148,13 +148,7 @@ $(document).ready(function() {
     var height = $('.histogram').height();
     console.log(height);
     results_by_seat.forEach(function(party) {
-      $barContainer = $('<div class="bar-container"></div').width(barContainerWidth);
-      var barHeight = parseInt(party.seats / totalSeats * height);
-      $bar = $('<div class="bar"></div>').css('background-color',party.colour).height(barHeight*10);
-      $barContainer.append($bar);
-      $histogram.append($barContainer);
-      $tableHeadRow.append($('<th scope="col"></th>').text(party.partyCode));
-      $tableBodyRow.append($('<td></td>').text(party.seats));
+      // get 
     })
     // append seats data to table
     $('.histogram').html($histogram);
