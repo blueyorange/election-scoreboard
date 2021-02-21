@@ -142,7 +142,7 @@ $(document).ready(function() {
 
     // Create histogram and results table
     var $histogram = $('<div class="histogram"></div>')
-    var $tableHeadRow = $('<thead><tr></tr></thead>');
+    var $tableHeadRow = $('<tr></tr></thead>');
     var $tableBodyRow = $('<tbody><tr></tr></tbody');
     var barContainerWidth = 100/(numberOfMainParties+1) + '%';
     var height = $('.histogram').height();

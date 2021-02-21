@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>UK Election Results</title>
-  <link href="css/styles.css" type="text/css" rel="stylesheet"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/script.js"></script>
-</head>
-<body>
-  <input type="file" id="uploader" multiple>
-  <h1>UK Election Results 2019</h1>
-  <h2>After 650 of 650 seats declared</h2>
-  <section class="data-by-seat">
-    <div class="histogram"></div>
-    <table class="seats-table">
-    </table>
-  </section>
-</body>
+  <head>
+    <title>UK Election Results</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <input type="file" id="uploader" multiple>
+      <h1>UK Election Results 2019</h1>
+      <h2>After 650 of 650 seats declared</h2>
+      <section class="data-by-seat">
+        <ul class="bars-vertical">
+          <li class="bar bar-CON" data-value="320" data-label="CON"></li>
+          <li class="bar bar-LAB" data-value="170" data-label="LAB"></li>
+          <li class="bar bar-LD" data-value="110" data-label="LD"></li>
+          <li class="bar bar-OTH" data-value="20" data-label="OTH"></li>
+        </ul>
+        <table class="seats-table">
+          <thead>
+            <tr>
+              <th scope="col">LAB</th>
+              <th scope="col">CON</th>
+              <th scope="col">LD</th>
+              <th scope="col">OTH</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr class="seats-table-body-row">
+                <td>6</td><td>2</td><td>1</td><td>0</td>
+              </tr>
+            </tbody></table>
+      </section>
+    </div>
+  </body>
 </html>
