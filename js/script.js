@@ -1,42 +1,30 @@
 $(document).ready(function() {
   // define number of main parties n to display
   // results separately (n+1 bars)
-  numberOfMainParties = 3;
-  totalSeats = 650;
-  seatsToWin = 326;
-  parties = [];
-  // define colours for main parties
-  colours = {
-    CON : "#0575c9",
-    LAB : "#e91d0e",
-    LD : "#f8ed2e",
-  }
+  var numberOfMainParties = 3;
+  var totalSeats = 650;
+  var seatsToWin = 326;
+  var votesTotal = 0;
+  var parties = {};
+  var currentSeat = 0;
   // Party class definition
   class Party {
     constructor(partyCode) {
       this.partyCode = partyCode;
       this.votes = 0;
-      this.total = 0;
       this.seats = 0;
       this.share = 0;
-      partyCode = $(this).text().trim();
-      if (partyCode in colours) {
-        this.colour = colours[partyCode];
-      } else {
-        // default colour if party colour undefined
-        this.colour = "#aaaaaa";
-      }
+      this.partyCode = partyCode;
+      // party colours defined in css
     }
 
     add_votes(votes) {
       this.votes += votes;
     }
 
-    update_vote_share(total) {
-      this.total += total;
-      this.share = parseInt(this.votes/this.total * 100);
+    update_vote_share() {
+      this.share = parseInt(this.votes/votesTotal * 100);
     }
-
     seat_won() {
       this.seats += 1;
     }
@@ -44,14 +32,12 @@ $(document).ready(function() {
   // Event listener for file selector
   $('#uploader').change(function(event) {
     var fileList = event.target.files;
-    fileIndex = 0;
-    loadAsText(fileList[fileIndex]);
 
     // event listener to load files sequentially
     $(document).on("click",function() {
       console.log("Clicked: loading next file.");
-      fileIndex += 1;
-      loadAsText(fileList[fileIndex]);
+      loadAsText(fileList[currentSeat]);
+      currentSeat += 1;
     })
   })
 
@@ -70,25 +56,9 @@ $(document).ready(function() {
       // New file has been loaded
       // Call function to update data and page
       var constituencyResultXML = loadedEvent.target.result;
-      if (fileIndex == 0) {
-        parties = createParties(constituencyResultXML);
-      }
       update(constituencyResultXML, parties);
     }
     reader.readAsText(file);
-  }
-
-  function createParties(firstResult) {
-    // Takes the first constituency result and returns
-    // an object of party objects with correct partyCodes
-    // and colours
-    var parties = {};
-    $(firstResult).find("partyCode").each(function() {
-      var partyCode = $(this).text().trim();
-      console.log("Creating party: ",partyCode);
-      parties[partyCode] = new Party( partyCode );
-    })
-    return parties;
   }
 
   function consolidatePartyData(array) {
@@ -113,23 +83,27 @@ $(document).ready(function() {
   function update(response, parties) {
     // Find total votes first so can update overall share of vote
     // for each party
-    var total_votes=0;
-    console.log("Total votes in this seat: ",total_votes);
+    var votes_this_seat=0;
     // iterate through results and update each party seats, votes, share
     $(response).find("result").each(function(index) {
       var partyCode = $(this).find("partyCode").text().trim();
       var votes = parseInt($(this).find("votes").text());
+      if (!(partyCode in parties)) {
+        // Add party to parties object as not seen before
+        parties[partyCode] = new Party(partyCode);
+      }
       parties[partyCode].add_votes(votes);
-      total_votes += votes;
+      votes_this_seat += votes;
       // winner is first result in list
       console.log("index: ",index);
       if (index==0) {
         console.log("Seat won by: ",partyCode)
         parties[partyCode].seat_won()};
     })
+    votesTotal += votes_this_seat;
     // update vote share for each party
     for (party in parties) {
-      parties[party].update_vote_share(total_votes);
+      parties[party].update_vote_share();
     }
     console.log(parties);
 
@@ -141,19 +115,18 @@ $(document).ready(function() {
     console.log(results_by_voteshare);
 
     // Create histogram and results table
-    var $histogram = $('<div class="histogram"></div>')
-    var $tableHeadRow = $('<tr></tr></thead>');
-    var $tableBodyRow = $('<tbody><tr></tr></tbody');
-    var barContainerWidth = 100/(numberOfMainParties+1) + '%';
-    var height = $('.histogram').height();
+    $('#seats').text(currentSeat);
+    var height = $('.bars-vertical').height();
     console.log(height);
-    results_by_seat.forEach(function(party) {
-      // get 
+    results_by_seat.forEach(function(party,index) {
+      // calculate height of new bar
+      var barHeight = parseInt(party.seats * height / totalSeats);
+      $bar = $(`ul.bars-vertical>li:nth-child(${index+1})`).first();
+      console.log($bar.length);
+      $bar.height(barHeight);
+      $bar.attr("data-value",String(party.seats));
+      $bar.attr("data-label",party.partyCode);
     })
-    // append seats data to table
-    $('.histogram').html($histogram);
-    $('.seats-table').html($tableHeadRow);
-    $('.seats-table').append($tableBodyRow);
   }  
 })
 
