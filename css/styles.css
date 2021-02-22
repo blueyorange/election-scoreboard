@@ -34,11 +34,11 @@ body {
   max-width: 150px;
   color: whitesmoke;
   position: relative;
-  opacity: 
+  opacity: 0.9;
 }
 
 .bars-vertical>li::before,
-.bars-vertical > li::after {
+.bars-vertical>li::after {
   position:absolute;
   content: attr(data-label);
   left: 32%;
@@ -55,22 +55,22 @@ body {
   margin-bottom: -10px;
 }
 
-.bar-CON {
+li[data-label='CON'] {
   background-color: #0575c9;
   height: 65%;
 }
 
-.bar-LAB {
+li[data-label='LAB'] {
 background-color: #e91d0e;
 height: 40%;
 }
 
-.bar-LD {
+li[data-label='LD'] {
   background-color: #fdfa51;
   height: 20%;
 }
 
-.bar-OTH {
+li[data-label='OTH'] {
 background-color: #ababab;
 height: 2%;
 }
@@ -81,9 +81,23 @@ border:#404040;
 border-style: solid;
 }
 
-.vh {
- position: absolute;
- overflow: hidden;
- width: 1px;
- height: 1px;
+div.data-by-seat {
+  position: relative;
+  width: 70%;
+  align-self: center;
+}
+
+div.seatpost {
+  position: absolute;
+  top: 162px;
+  height: 1 px;
+  width: 100%;
+  border: 1px dashed #888;
+}
+
+div.seatpost::before {
+  content:attr(data-label);
+  position: absolute;
+  top: -20px;
+  right: 0px;
 }

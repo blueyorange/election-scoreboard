@@ -127,6 +127,7 @@ $(document).ready(function() {
       $bar.attr("data-value",String(party.seats));
       $bar.attr("data-label",party.partyCode);
       $bar.removeClass();
+      // colour is set in stylesheet by css class bar-partyCode
       $bar.addClass(`bar-${party.partyCode}`);
     })
   }  
