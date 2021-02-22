@@ -28,7 +28,7 @@ body {
   border-bottom: 1px solid #666;
 }
 
-.bars-vertical > li {
+ul.bars-vertical > li {
   min-width: 100px;
   max-width: 150px;
   color: whitesmoke;
@@ -36,18 +36,18 @@ body {
   opacity: 0.9;
 }
 
-.bars-vertical>li::before,
-.bars-vertical>li::after {
+ul.bars-vertical>li::before,
+ul.bars-vertical>li::after {
   position:absolute;
   content: attr(data-label);
   left: 32%;
 }
 
-.bars-vertical>li::before {
+ul.bars-vertical>li::before {
   content:attr(data-label);
   top: -18px;
 }
-.bars-vertical>li::after {
+ul.bars-vertical>li::after {
   content:attr(data-value);
   bottom: -10px;
   margin-bottom: -10px;
@@ -67,12 +67,6 @@ li[data-label='LD'] {
 
 li[data-label='OTH'] {
   background-color: #ababab;
-}
-
-.seats-table-body-row > td,th {
-width: 25%;
-border:#404040;
-border-style: solid;
 }
 
 .bars-vertical>li[data-label='CON'] {
@@ -103,6 +97,7 @@ div.seatpost {
   height: 1 px;
   width: 100%;
   border: 1px dashed #888;
+  z-index: 0;
 }
 
 div.seatpost::before {
@@ -112,14 +107,25 @@ div.seatpost::before {
   right: 0px;
 }
 
-.bars-horizontal {
-  width: 600px;
+ul.bars-horizontal {
+  width: 100%;
+  height: 325px;
   display: inline-block;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  list-style: none;
+  justify-content: space-around;
+  align-items:flex-end;
+  border-bottom: 1px solid #666;
 }
 
 ul.bars-horizontal>li {
-  width:attr(data-value);
+  height: 30px;
+  min-width: 100px;
+  max-width: 150px;
+  color: whitesmoke;
   position: relative;
-  display:inline;
-  float:left;
+  float: left;
+  opacity: 0.9;
 }
+
