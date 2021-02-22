@@ -22,7 +22,7 @@ $(document).ready(function() {
       this.votes += votes;
     }
 
-    update_vote_share() {
+    update_vote_share(votesTotal) {
       this.share = parseInt(this.votes/votesTotal * 100);
     }
     seat_won() {
@@ -62,7 +62,11 @@ $(document).ready(function() {
   }
 
   function consolidatePartyData(array) {
-    // separate major and minor party data
+    // This function takes in the ordered array of party data and consolidates
+    // the minor party data into a single object, leaving the major party data 
+    // intact
+
+    // split array to separate major and minor party data
     for (var i=0; i < numberOfMainParties; i++) {
       mainParties = array.slice(0,numberOfMainParties);
       otherParties = array.slice(numberOfMainParties+1);
@@ -103,7 +107,7 @@ $(document).ready(function() {
     votesTotal += votes_this_seat;
     // update vote share for each party
     for (party in parties) {
-      parties[party].update_vote_share();
+      parties[party].update_vote_share(votesTotal);
     }
     console.log(parties);
 
