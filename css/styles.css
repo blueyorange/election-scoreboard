@@ -13,8 +13,8 @@ body {
 }
 
 .page-container {
-  margin-right: 2%;
-  margin-left: 2%;
+  margin-right: 8%;
+  margin-left: 4%;
 }
 .bars-vertical {
   width: 100%;
@@ -34,6 +34,7 @@ body {
   max-width: 150px;
   color: whitesmoke;
   position: relative;
+  opacity: 
 }
 
 .bars-vertical>li::before,
@@ -53,6 +54,7 @@ body {
   bottom: -10px;
   margin-bottom: -10px;
 }
+
 .bar-CON {
   background-color: #0575c9;
   height: 65%;

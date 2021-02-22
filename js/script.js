@@ -126,6 +126,8 @@ $(document).ready(function() {
       $bar.height(barHeight);
       $bar.attr("data-value",String(party.seats));
       $bar.attr("data-label",party.partyCode);
+      $bar.removeClass();
+      $bar.addClass(`bar-${party.partyCode}`);
     })
   }  
 })
