@@ -4,7 +4,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background: white;
   box-sizing: border-box;
   position: normal;
@@ -53,19 +53,23 @@ ul.bars-vertical>li::after {
   margin-bottom: -10px;
 }
 
-li[data-label='CON'] {
+.CON {
   background-color: #0575c9;
 }
 
-li[data-label='LAB'] {
-background-color: #e91d0e;
+.LAB {
+  background-color: #e91d0e;
 }
 
-li[data-label='LD'] {
+.LD {
   background-color: #fdfa51;
 }
 
-li[data-label='OTH'] {
+.PC {
+  background-color: #008142;
+}
+
+.OTH {
   background-color: #ababab;
 }
 
@@ -107,6 +111,78 @@ div.seatpost::before {
   right: 0px;
 }
 
+table.results-voteshare {
+  text-align:center;
+}
+
+th.col-party {
+  min-width: 100px;
+}
+th.col-share {
+  padding: 10px;
+  min-width: 100px;
+}
+th.col-bar {
+  width: 500px;
+}
+table.results-voteshare>thead>tr {
+  background-color:#444444;
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  color: #aaaaaa;
+  text-align:center;
+}
+
+div.h-bar {
+  transition: width 0.5s;
+}
+
+div[data-label='CON'] {
+  width:100px;
+  height: 20px;
+}
+
+div[data-label='LAB'] {
+  width:100px;
+  height: 20px;
+}
+div[data-label='LD'] {
+  width:100px;
+  height: 20px;
+
+}
+div[data-label='OTH'] {
+  width:100px;
+  height: 20px;
+}
+
+div[data-label='PC'] {
+  width:100px;
+  height: 20px;
+}
+
+.win {
+  animation: pulse .5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+#party-win {
+  padding: 3px;
+}
+
+
 ul.bars-horizontal {
   width: 100%;
   height: 325px;
@@ -120,12 +196,12 @@ ul.bars-horizontal {
 }
 
 ul.bars-horizontal>li {
-  height: 30px;
-  min-width: 100px;
-  max-width: 150px;
-  color: whitesmoke;
+  padding-top:10px;
+  padding-bottom: 10px;
+  color: #bbbbbb;
   position: relative;
   float: left;
   opacity: 0.9;
+  text-align: center;
+  color: #222;
 }
-
