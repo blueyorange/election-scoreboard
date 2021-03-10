@@ -18,7 +18,6 @@ $(document).ready(function () {
       this.votes = 0;
       this.seats = 0;
       this.share = 0;
-      this.lastShare = 0;
       this.partyCode = partyCode;
       // party colours defined in css
     }
@@ -37,6 +36,10 @@ $(document).ready(function () {
         this.hasMajority = true;
       }
     }
+  }
+
+  function swingToWin(parties) {
+    return String(Math.floor((parties[0].share - parties[1].share)/2))+'%';
   }
 
   // check if file API supported
@@ -157,7 +160,8 @@ $(document).ready(function () {
     // and apply function to separate major and minor party data
     var results_by_seat = consolidatePartyData(Object.values(parties).sort((a, b) => (b.seats - a.seats)));
     var results_by_voteshare = consolidatePartyData(Object.values(parties).sort((a, b) => (b.share - a.share)));
-
+    $('#secondPlace').text(results_by_voteshare[1].partyCode);
+    $('#swingtowin').text( swingToWin(results_by_voteshare) )
     // VERTICAL BAR CHART - SEATS
     var height = $('.bars-vertical').height();
     // Iterate through results by seat for first chart
