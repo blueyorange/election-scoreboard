@@ -11,15 +11,16 @@
       <input type="file" id="uploader" multiple>
       <p>Click anywhere to advance or <button id="auto-start">Auto</button></p>
       <h1>UK Election Results</h1>
-      <h2>After <span id="currentSeat">650</span> of 650 seats declared</h2>
+      <h2>After <span id="currentSeat">_</span> of <span id="totalSeats">_</span> seats declared</h2>
+      <h3>Latest: <span id="constituencyName"></span> - <span id="party-win" class=""></span></h3>
       <div class="data-by-seat">
         <ul class="bars-vertical">
-          <li class="CON" data-value="362" data-label="CON"></li>
-          <li class="LAB" data-value="170" data-label="LAB"></li>
-          <li class="LD" data-value="110" data-label="LD"></li>
-          <li class="OTH" data-value="20" data-label="OTH"></li>
+          <li class="" data-value="" data-label=""></li>
+          <li class="" data-value="" data-label=""></li>
+          <li class="" data-value="" data-label=""></li>
+          <li class="" data-value="" data-label=""></li>
         </ul>
-        <div class="seatpost" data-label="326 seats to win"></div>
+        <div id="seatpost" data-label="seats to win"></div>
       </div>
       <div class="data-by-voteshare">
         <h2>Overall share of vote</h2>
@@ -33,36 +34,27 @@
           </thead>
           <tbody>
             <tr>
-              <td>CON</td>
-              <td>44%</td>
-              <td><div class="h-bar CON" data-label="CON"></div></td>
+              <td></td>
+              <td></td>
+              <td><div class="h-bar" data-label=""></div></td>
             </tr>
             <tr>
-              <td>LAB</td>
-              <td>33%</td>
-              <td><div class="h-bar LAB" data-label="LAB"></div></td>
+              <td></td>
+              <td></td>
+              <td><div class="h-bar" data-label=""></div></td>
             </tr>
             <tr>
-              <td>LD</td>
-              <td>12%</td>
-              <td><div class="h-bar LD" data-label="LD"></div></td>
+              <td></td>
+              <td></td>
+              <td><div class="h-bar" data-label=""></div></td>
             </tr>
             <tr>
-              <td>OTH</td>
-              <td>11%</td>
-              <td><div class="h-bar OTH" data-label="OTH"></div></td>
+              <td></td>
+              <td></td>
+              <td><div class="h-bar" data-label=""></div></td>
             </tr>
           </tbody>
         </table>
-      </div>
-      <div class="latest-seat">
-        <h2>Latest: <span id="constituencyName">Aberconwy</span> - <span id="party-win" class="CON">CON</span></h2>
-        <ul class="bars-horizontal">
-          <li class="CON" data-value="41%" data-label="CON">41%</li>
-          <li class="LAB" data-value="39%" data-label="LAB">39%</li>
-          <li class="LD" data-value="15%" data-label="LD">15%</li>
-          <li class="OTH" data-value="5%" data-label="OTH">5%</li>
-        </ul>
       </div>
     </div>
   </body>

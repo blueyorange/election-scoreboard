@@ -16,9 +16,16 @@ body {
   margin-right: 8%;
   margin-left: 4%;
 }
-.bars-vertical {
+
+div.data-by-seat {
+  position: relative;
+  align-self: center;
+  padding-bottom: 15px;
+}
+
+ul.bars-vertical {
   width: 100%;
-  height: 325px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -38,7 +45,7 @@ ul.bars-vertical > li {
 
 ul.bars-vertical>li::before,
 ul.bars-vertical>li::after {
-  position:absolute;
+  position: absolute;
   content: attr(data-label);
   left: 32%;
 }
@@ -54,23 +61,27 @@ ul.bars-vertical>li::after {
 }
 
 .CON {
-  background-color: #0575c9;
+  background-color: #0575c9 !important;
 }
 
 .LAB {
-  background-color: #e91d0e;
+  background-color: #e91d0e !important;
 }
 
 .LD {
-  background-color: #fdfa51;
+  background-color: #fdfa51 !important;
 }
 
 .PC {
-  background-color: #008142;
+  background-color: #008142 !important;
 }
 
-.OTH {
-  background-color: #ababab;
+.OTHER {
+  background-color: #ababab !important;
+}
+
+.DEFAULT {
+  background-color: purple;
 }
 
 .bars-vertical>li[data-label='CON'] {
@@ -89,22 +100,16 @@ ul.bars-vertical>li::after {
   height: 2%;
 }
 
-div.data-by-seat {
-  position: relative;
-  width: 70%;
-  align-self: center;
-}
-
-div.seatpost {
+div#seatpost {
   position: absolute;
-  top: 162px;
+  bottom: 200px;
   height: 1 px;
   width: 100%;
   border: 1px dashed #888;
   z-index: 0;
 }
 
-div.seatpost::before {
+div#seatpost::before {
   content:attr(data-label);
   position: absolute;
   top: -20px;
@@ -136,30 +141,9 @@ table.results-voteshare>thead>tr {
 
 div.h-bar {
   transition: width 0.5s;
-}
-
-div[data-label='CON'] {
-  width:100px;
+  width: 0px;
   height: 20px;
-}
-
-div[data-label='LAB'] {
-  width:100px;
-  height: 20px;
-}
-div[data-label='LD'] {
-  width:100px;
-  height: 20px;
-
-}
-div[data-label='OTH'] {
-  width:100px;
-  height: 20px;
-}
-
-div[data-label='PC'] {
-  width:100px;
-  height: 20px;
+  background-color:purple;
 }
 
 .win {
@@ -182,26 +166,3 @@ div[data-label='PC'] {
   padding: 3px;
 }
 
-
-ul.bars-horizontal {
-  width: 100%;
-  height: 325px;
-  display: inline-block;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  list-style: none;
-  justify-content: space-around;
-  align-items:flex-end;
-  border-bottom: 1px solid #666;
-}
-
-ul.bars-horizontal>li {
-  padding-top:10px;
-  padding-bottom: 10px;
-  color: #bbbbbb;
-  position: relative;
-  float: left;
-  opacity: 0.9;
-  text-align: center;
-  color: #222;
-}
